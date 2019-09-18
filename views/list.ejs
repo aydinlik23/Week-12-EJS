@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+       
+    </div>
+        <div class="log" id="login" style="float: right; margin-right: 0px;" >
+            <form action="/login" method="post">
+                
+                <div class="form-group" style="color: #F4E95B; font-style: italic;">
+                    <label>Username</label>
+                    <input type="Email" class="form-control" name="Email" placeholder="Email">
+                </div>
+                <div class="form-group" style="color: #F4E95B; font-style: italic; margin-right: -3px;">
+                    <label>Password</label>
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+        
+                <button type="submit" class="btn btn-primary" ><a href="" style="font-size: 20px; color: #F4E95B; font-style: italic;">Login</a></button>
+            </form>
+        </div>
+
+        
+    <div class="box" id="heading">
+            </h1> <%= listTitle %> </h1>
+    </div>
+    <div class="box">
+            <% for (let i=0; i<newListItems.length; i++) { %>
+        <div class="item">
+            <input type="checkbox">
+            <p> <%= newListItems[i] %> </p>
+     </div>
+        <% } %>
+        <form class="" action="/" method="post">
+            <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+            <button type="submit" name="button">+</button>
+        </form>
+    </body>
+
+    <footer>
+        copywrite 2019 Aydin Akgul
+    </footer>
+    
+    </html>
